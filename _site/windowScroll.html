@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Indicator</title>
+    
+    <style>
+        body {min-height: 5000px;}
+        h1 {text-align: center; margin: 60px;}
+
+        .boxBar {
+	       width: 100%;
+	       border: 5px solid #000;
+	       position: fixed;
+	       top: 0;
+	       left: 0;
+        }
+
+        .bar {
+            height: 25px ;
+            background: #2A5ADA;
+            width: 0%;
+        }
+        .percentage-html {
+            color: #fff;   
+            left: 0.5%; 
+            position: absolute; 
+            top : -50%; 
+        } 
+        .calc-wrapper { 
+            border: 2px solid green; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 20vh;
+            margin-top: 20vh; 
+         } 
+         .data-calc { 
+            border-right: 2px solid red ; 
+            height: 100%;
+         } 
+         .data-title, .results-title { 
+           text-align: center;
+           font-weight: 700;
+         } 
+
+    </style>
+    
+</head>
+<body>
+    
+    <div class="boxBar">
+       <div class="bar"></div>
+       <p class="percentage-html"></p>
+    </div>
+    <h1>Scroll buddy!</h1>
+
+    <div class="calc-wrapper">
+        <div class="data-calc">
+            <p class="data-title">DATA</p> 
+        </div>
+        <div class="results-calc">
+            <p class="results-title">RESULTS</p>
+            <p></p>
+        </div>
+
+    </div>
+    
+    <script type="text/javascript" src="/js/windowScroll.js"></script>
+</body>
+</html>
