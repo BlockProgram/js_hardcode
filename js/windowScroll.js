@@ -64,3 +64,14 @@ const reducedResults = data.reduce((total, n) => {
 reducedField.innerHTML = reducedResults; 
 
  console.log(reducedResults); 
+
+
+// Add new Text on click inside window 
+addEventListener("click", function() {  
+    const newText     = document.createElement("p");
+    const textContent = "hello sir milli"; 
+
+    newText.innerHTML = textContent; 
+    document.body.appendChild(newText); 
+}); 
+
